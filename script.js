@@ -1,6 +1,4 @@
-// ========================================
-// HAPPY DOG - V2
-// ========================================
+// HAPPY DOG
 
 
 // MENÚ MÓVIL
@@ -19,9 +17,7 @@ if (menuBtn && navLinks) {
   });
 
 
-  const menuLinks = navLinks.querySelectorAll("a");
-
-  menuLinks.forEach((link) => {
+  navLinks.querySelectorAll("a").forEach((link) => {
 
     link.addEventListener("click", () => {
 
@@ -36,26 +32,19 @@ if (menuBtn && navLinks) {
 }
 
 
-// FAQ
+// PREGUNTAS FRECUENTES
 
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
 
-  const question =
-    item.querySelector(".faq-question");
-
-  const answer =
-    item.querySelector(".faq-answer");
-
+  const question = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
 
   question.addEventListener("click", () => {
 
-    const isOpen =
-      item.classList.contains("active");
+    const alreadyOpen = item.classList.contains("active");
 
-
-    // CERRAR TODAS
 
     faqItems.forEach((otherItem) => {
 
@@ -69,9 +58,7 @@ faqItems.forEach((item) => {
     });
 
 
-    // ABRIR SELECCIONADA
-
-    if (!isOpen) {
+    if (!alreadyOpen) {
 
       item.classList.add("active");
 
@@ -85,35 +72,29 @@ faqItems.forEach((item) => {
 });
 
 
-// AÑO AUTOMÁTICO
+// AÑO
 
-const year =
-  document.getElementById("year");
+const year = document.getElementById("year");
 
 if (year) {
-
-  year.textContent =
-    new Date().getFullYear();
-
+  year.textContent = new Date().getFullYear();
 }
 
 
-// HEADER AL HACER SCROLL
+// SOMBRA DEL HEADER
 
-const header =
-  document.querySelector(".header");
+const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
 
   if (window.scrollY > 20) {
 
     header.style.boxShadow =
-      "0 8px 30px rgba(0, 0, 0, 0.06)";
+      "0 8px 30px rgba(0,0,0,0.06)";
 
   } else {
 
-    header.style.boxShadow =
-      "none";
+    header.style.boxShadow = "none";
 
   }
 
