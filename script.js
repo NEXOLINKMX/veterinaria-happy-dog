@@ -11,7 +11,6 @@ if (menuBtn && navLinks) {
   menuBtn.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
-
     document.body.classList.toggle("menu-open");
 
   });
@@ -22,7 +21,6 @@ if (menuBtn && navLinks) {
     link.addEventListener("click", () => {
 
       navLinks.classList.remove("active");
-
       document.body.classList.remove("menu-open");
 
     });
