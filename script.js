@@ -1,6 +1,5 @@
-
 // ========================================
-// VETERINARIA HAPPY DOG - V1
+// HAPPY DOG - V2
 // ========================================
 
 
@@ -14,6 +13,7 @@ if (menuBtn && navLinks) {
   menuBtn.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
+
     document.body.classList.toggle("menu-open");
 
   });
@@ -26,6 +26,7 @@ if (menuBtn && navLinks) {
     link.addEventListener("click", () => {
 
       navLinks.classList.remove("active");
+
       document.body.classList.remove("menu-open");
 
     });
@@ -35,21 +36,27 @@ if (menuBtn && navLinks) {
 }
 
 
-// PREGUNTAS FRECUENTES
+// FAQ
 
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
 
-  const question = item.querySelector(".faq-question");
-  const answer = item.querySelector(".faq-answer");
+  const question =
+    item.querySelector(".faq-question");
+
+  const answer =
+    item.querySelector(".faq-answer");
+
 
   question.addEventListener("click", () => {
 
-    const isActive = item.classList.contains("active");
+    const isOpen =
+      item.classList.contains("active");
 
 
-    // Cerrar todas
+    // CERRAR TODAS
+
     faqItems.forEach((otherItem) => {
 
       otherItem.classList.remove("active");
@@ -62,8 +69,9 @@ faqItems.forEach((item) => {
     });
 
 
-    // Abrir la seleccionada
-    if (!isActive) {
+    // ABRIR SELECCIONADA
+
+    if (!isOpen) {
 
       item.classList.add("active");
 
@@ -79,16 +87,21 @@ faqItems.forEach((item) => {
 
 // AÑO AUTOMÁTICO
 
-const year = document.getElementById("year");
+const year =
+  document.getElementById("year");
 
 if (year) {
-  year.textContent = new Date().getFullYear();
+
+  year.textContent =
+    new Date().getFullYear();
+
 }
 
 
-// SOMBRA DEL HEADER AL HACER SCROLL
+// HEADER AL HACER SCROLL
 
-const header = document.querySelector(".header");
+const header =
+  document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
 
@@ -99,7 +112,8 @@ window.addEventListener("scroll", () => {
 
   } else {
 
-    header.style.boxShadow = "none";
+    header.style.boxShadow =
+      "none";
 
   }
 
