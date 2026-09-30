@@ -19,9 +19,7 @@
   --radius: 24px;
 }
 
-/* =========================================
-   RESET
-========================================= */
+/* RESET */
 
 * {
   box-sizing: border-box;
@@ -99,9 +97,8 @@ img {
   font-size: 17px;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+
+/* HEADER */
 
 .header {
   position: sticky;
@@ -179,9 +176,8 @@ img {
   background: var(--dark);
 }
 
-/* =========================================
-   HERO
-========================================= */
+
+/* HERO */
 
 .hero {
   position: relative;
@@ -307,9 +303,37 @@ img {
   padding: 20px 17px;
   display: flex;
   align-items: center;
+  gap: 13px;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 18px;
+}
+
+.hero-feature-icon {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.icon-care {
+  color: var(--turquoise);
+  background: var(--turquoise-light);
+}
+
+.icon-heart {
+  color: var(--red);
+  background: #fff0f2;
+}
+
+.icon-diagnosis {
+  color: #3976d9;
+  background: #edf4ff;
 }
 
 .hero-feature-card strong,
@@ -329,6 +353,7 @@ img {
   font-size: 12px;
   line-height: 1.3;
 }
+
 
 /* HERO CARD */
 
@@ -394,9 +419,8 @@ img {
   line-height: 1;
 }
 
-/* =========================================
-   NOSOTROS
-========================================= */
+
+/* NOSOTROS */
 
 .about {
   background: var(--white);
@@ -453,9 +477,8 @@ img {
   font-size: 14px;
 }
 
-/* =========================================
-   SERVICIOS
-========================================= */
+
+/* SERVICIOS */
 
 .services {
   background: var(--background);
@@ -516,6 +539,7 @@ img {
   color: var(--turquoise);
   background: var(--turquoise-light);
   border-radius: 14px;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -576,9 +600,8 @@ img {
   font-weight: 800;
 }
 
-/* =========================================
-   CITA
-========================================= */
+
+/* CITA */
 
 .appointment {
   padding: 40px 0;
@@ -632,9 +655,8 @@ img {
   white-space: nowrap;
 }
 
-/* =========================================
-   PRODUCTOS
-========================================= */
+
+/* PRODUCTOS */
 
 .products {
   background: var(--white);
@@ -679,9 +701,8 @@ img {
   font-weight: 800;
 }
 
-/* =========================================
-   RESEÑAS
-========================================= */
+
+/* RESEÑAS */
 
 .reviews {
   background: var(--background);
@@ -744,10 +765,8 @@ img {
   font-size: 14px;
 }
 
-/* =========================================
-   UBICACIÓN
-   MAPA GRANDE TIPO REFERENCIA HEBEL
-========================================= */
+
+/* UBICACIÓN */
 
 .location-showcase {
   position: relative;
@@ -755,8 +774,6 @@ img {
   overflow: hidden;
   background: var(--white);
 }
-
-/* pequeño detalle de fondo, muy sutil */
 
 .location-showcase::before {
   content: "";
@@ -769,8 +786,6 @@ img {
   border-radius: 50%;
   pointer-events: none;
 }
-
-/* ENCABEZADO */
 
 .location-showcase-header {
   position: relative;
@@ -804,8 +819,6 @@ img {
   line-height: 1.75;
 }
 
-/* MAPA GRANDE */
-
 .happy-map {
   position: relative;
   z-index: 2;
@@ -815,8 +828,7 @@ img {
   background: #edf2f1;
   border: 1px solid rgba(8, 127, 134, 0.12);
   border-radius: 26px;
-  box-shadow:
-    0 24px 60px rgba(17, 48, 51, 0.11);
+  box-shadow: 0 24px 60px rgba(17, 48, 51, 0.11);
 }
 
 .happy-map iframe {
@@ -825,8 +837,6 @@ img {
   height: 100% !important;
   border: 0 !important;
 }
-
-/* INFORMACIÓN DEBAJO */
 
 .location-bottom {
   position: relative;
@@ -839,11 +849,8 @@ img {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 24px;
-  box-shadow:
-    0 22px 55px rgba(17, 48, 51, 0.13);
+  box-shadow: 0 22px 55px rgba(17, 48, 51, 0.13);
 }
-
-/* DIRECCIÓN */
 
 .location-bottom-address {
   position: relative;
@@ -906,8 +913,6 @@ img {
   transform: translateX(3px);
 }
 
-/* HORARIOS */
-
 .location-bottom-hours {
   padding: 35px 40px 32px;
   background: var(--white);
@@ -957,9 +962,8 @@ img {
   color: var(--red);
 }
 
-/* =========================================
-   FAQ
-========================================= */
+
+/* FAQ */
 
 .faq {
   background: var(--background);
@@ -1021,9 +1025,8 @@ img {
   color: var(--muted);
 }
 
-/* =========================================
-   CONTACTO
-========================================= */
+
+/* CONTACTO */
 
 .contact {
   color: var(--white);
@@ -1133,9 +1136,8 @@ img {
   font-size: 15px;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+
+/* FOOTER */
 
 .footer {
   padding: 40px 0 24px;
@@ -1179,9 +1181,8 @@ img {
   font-size: 11px;
 }
 
-/* =========================================
-   WHATSAPP FLOTANTE
-========================================= */
+
+/* WHATSAPP FLOTANTE */
 
 .whatsapp-float {
   position: fixed;
@@ -1232,9 +1233,79 @@ img {
   font-size: 13px;
 }
 
+
 /* =========================================
-   RESPONSIVE
+   UBICACIÓN — SOLO COMPUTADORA
 ========================================= */
+
+@media (min-width: 851px) {
+
+  #ubicacion.location-showcase {
+    padding: 115px 0 120px;
+  }
+
+  #ubicacion > .container {
+    width: min(1180px, calc(100% - 80px));
+  }
+
+  #ubicacion .location-showcase-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 390px;
+    align-items: end;
+    gap: 70px;
+    margin-bottom: 42px;
+  }
+
+  #ubicacion .location-showcase-title h2 {
+    font-size: clamp(52px, 5vw, 70px);
+    line-height: 0.95;
+    letter-spacing: -3.5px;
+  }
+
+  #ubicacion .location-showcase-description {
+    max-width: 390px;
+    padding-bottom: 6px;
+  }
+
+  #ubicacion .happy-map {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    border-radius: 26px;
+  }
+
+  #ubicacion .happy-map iframe {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+  }
+
+  #ubicacion .location-bottom {
+    width: calc(100% - 70px);
+    margin: -42px auto 0;
+    display: grid;
+    grid-template-columns: 360px minmax(0, 1fr);
+  }
+
+  #ubicacion .location-bottom-address {
+    padding: 39px 40px;
+  }
+
+  #ubicacion .location-bottom-hours {
+    padding: 35px 40px 32px;
+  }
+
+  #ubicacion .location-hours-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 34px;
+  }
+}
+
+
+/* RESPONSIVE */
 
 @media (max-width: 1050px) {
 
@@ -1262,6 +1333,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
 
 @media (max-width: 850px) {
 
@@ -1347,8 +1419,6 @@ img {
     align-items: flex-start;
   }
 
-  /* UBICACIÓN TABLET */
-
   .location-showcase {
     padding: 85px 0;
   }
@@ -1385,6 +1455,7 @@ img {
     gap: 40px;
   }
 }
+
 
 @media (max-width: 620px) {
 
@@ -1458,9 +1529,8 @@ img {
     width: 100%;
   }
 
-  /* =========================================
-     UBICACIÓN MÓVIL
-  ========================================= */
+
+  /* UBICACIÓN MÓVIL — CONSERVADA */
 
   .location-showcase {
     padding: 75px 0;
