@@ -45,7 +45,6 @@ faqItems.forEach((item) => {
 
     const alreadyOpen = item.classList.contains("active");
 
-
     faqItems.forEach((otherItem) => {
 
       otherItem.classList.remove("active");
@@ -72,7 +71,7 @@ faqItems.forEach((item) => {
 });
 
 
-// AÑO
+// AÑO AUTOMÁTICO
 
 const year = document.getElementById("year");
 
